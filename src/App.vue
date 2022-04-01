@@ -28,12 +28,13 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
   text-decoration: none;
+  padding-right: 10px;
 }
 
 nav a.router-link-exact-active {
-  color: #00A6FF;
+  color: #7534FF;
   
 }
 

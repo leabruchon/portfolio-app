@@ -3,21 +3,26 @@
 
     
     <div class = "project-apercu">
-        
+        <img :src="require(`@/assets/${filename}`)"  alt="image aperçu projet">
     </div>
+
       
 
 </template>
 
 <script>
+
+
     export default {
         name: 'PortfolioProjectApercu',
         props: {
-            title: String,
-            description: String, 
-            date : String
+            filename: String,
+            //title: String,
+            //description: String, 
+            //date : String
         }
     }
+
     
 
 </script>

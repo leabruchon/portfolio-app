@@ -4,10 +4,10 @@
             <h1> Projets</h1>
         </div>
         <div class = "project-boxs">
-            <PortfolioProjectApercu/>
-            <PortfolioProjectApercu/>
-            <PortfolioProjectApercu/>
-            <PortfolioProjectApercu/>
+            <PortfolioProjectApercu filename = "home-picture.svg"/>
+            <PortfolioProjectApercu filename = "bx-map.svg"/>
+            <PortfolioProjectApercu filename = "home-picture.svg"/>
+            <PortfolioProjectApercu filename = "home-picture.svg"/>
         </div>
         
     </div>
