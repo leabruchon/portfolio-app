@@ -4,6 +4,7 @@
    
   <nav>
     <router-link to="/"><img alt="Vue logo" src="./assets/logo.svg"></router-link> 
+    <router-link to="/">Accueil</router-link> 
     <router-link to="/portfolio">Portfolio</router-link> 
     <router-link to="/about">À propos</router-link>
   </nav>
@@ -49,7 +50,8 @@ nav a.router-link-exact-active {
 .header img{
     width: 40px;
     height: 40px;
-    
+    margin-bottom: -3px;
+    padding-right: 30px;
     
 }
 </style>

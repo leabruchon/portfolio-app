@@ -4,7 +4,7 @@
             <h1> Projets</h1>
         </div>
         <div class = "project-boxs">
-            <PortfolioProjectApercu filename = "home-picture.svg"/>
+            <PortfolioProjectApercu filename = "image1.png"/>
             <PortfolioProjectApercu filename = "bx-map.svg"/>
             <PortfolioProjectApercu filename = "home-picture.svg"/>
             <PortfolioProjectApercu filename = "home-picture.svg"/>

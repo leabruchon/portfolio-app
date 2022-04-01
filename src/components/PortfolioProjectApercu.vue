@@ -31,10 +31,16 @@
 
     .project-apercu{
         width: 300px;
-        height: 400px;
+        height: 350px;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 2px #dbdada;
+    }
+
+    .project-apercu img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0px 0px;
     }
 
 </style>
