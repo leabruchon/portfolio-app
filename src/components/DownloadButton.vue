@@ -24,6 +24,7 @@ export default {
         text-decoration: none;
         display: flex;
         align-items: center;
+        justify-content: space-around;
         flex-direction: row;
         color: black;
     }

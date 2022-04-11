@@ -31,7 +31,7 @@ nav a {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  padding-right: 10px;
+  margin: 10px;
 }
 
 nav a.router-link-exact-active {
@@ -44,14 +44,17 @@ nav a.router-link-exact-active {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 100px;
+  margin-left: 5%;
 }
 
 .header img{
     width: 40px;
     height: 40px;
     margin-bottom: -3px;
-    padding-right: 30px;
     
+}
+
+nav a.router-link img{
+  margin-right: 30px;
 }
 </style>

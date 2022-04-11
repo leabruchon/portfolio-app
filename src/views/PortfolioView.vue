@@ -4,10 +4,10 @@
             <h1> Projets</h1>
         </div>
         <div class = "project-boxs">
-            <PortfolioProjectApercu filename = "image1.png"/>
-            <PortfolioProjectApercu filename = "bx-map.svg"/>
-            <PortfolioProjectApercu filename = "home-picture.svg"/>
-            <PortfolioProjectApercu filename = "home-picture.svg"/>
+            <a href= "#/projet"><PortfolioProjectApercu filename = "image1.png" title = "Application mobile CrustBreak"/></a>
+            <a href= "#/projet"><PortfolioProjectApercu filename = "image2.png" title = "Golf Green Team"/></a>
+            <a href= "#/projet"><PortfolioProjectApercu filename = "image2.png" title = "Site Portfolio"/></a>
+            <a href= "#/projet"><PortfolioProjectApercu filename = "image2.png" title = "Projets Java"/></a>   
         </div>
         
     </div>
@@ -31,6 +31,11 @@ import PortfolioProjectApercu from '@/components/PortfolioProjectApercu.vue'
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    .project-boxs a{
+        text-decoration: none;
+        color: #2c3e50;
     }
 
 </style>

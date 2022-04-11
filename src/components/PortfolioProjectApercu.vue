@@ -4,6 +4,9 @@
     
     <div class = "project-apercu">
         <img :src="require(`@/assets/${filename}`)"  alt="image aperçu projet">
+        <div class = "title">
+            <h3> {{ title }} </h3>
+        </div>
     </div>
 
       
@@ -17,7 +20,7 @@
         name: 'PortfolioProjectApercu',
         props: {
             filename: String,
-            //title: String,
+            title: String,
             //description: String, 
             //date : String
         }
