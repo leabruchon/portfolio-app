@@ -84,7 +84,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  /*color: black;*/
+  color: black;
   text-decoration: none;
   margin-right: 20px;
 }
@@ -112,11 +112,14 @@ nav a.router-link img{
   margin-right: 30px;
 }
 
+#LBlogo{
+  color: black;
+}
+
 @media screen and (max-width: 900px) {
   .home-content {
     flex-wrap: wrap;
     justify-content: center;
-
   }
 
   .home-left-content {
@@ -124,7 +127,6 @@ nav a.router-link img{
     text-align: center!important;
     margin-bottom: 5%;
   }
-
 }
 
 </style>
