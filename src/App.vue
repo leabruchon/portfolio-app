@@ -1,16 +1,21 @@
 <template>
   <div class = "header">
-
-   
   <nav>
     <router-link to="/"><img alt="Vue logo" src="./assets/logo.svg"></router-link> 
     <router-link to="/">Accueil</router-link> 
     <router-link to="/portfolio">Portfolio</router-link> 
     <router-link to="/services">Services</router-link>
   </nav>
+  <label class="switch">
+      <input 
+      name="darkToggleCheckbox" 
+      type="checkbox"
+      v-on:click="addClass"  
+      >
+      <span class="slider round"></span>
+    </label>
   </div>
   <router-view/>
-  
   <PageFooter tel="07 81 39 87 79" email="lea.bruchon@epfedu.fr" adresse="Chatenay-Malabry, 92 290" />
         
 </template>
@@ -23,6 +28,26 @@ export default {
   name: 'HomeView',
   components: {
     PageFooter
+  },
+  data () {
+    return {
+      isAddClass: false
+    }
+  },
+  methods: {
+    addClass: function() {
+        const body = document.body;
+        const app = document.getElementById("app");
+        if(this.isAddClass == false){
+                this.isAddClass = true;
+                body.style.background = "#121212DE";
+                app.style.color = "white";
+        }else{
+          this.isAddClass = false;
+          body.style.background = "#FFFFFF";
+          app.style.color = "#121212";
+        }
+    }
   }
 }
 </script>
@@ -33,11 +58,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #121212;
 }
 
 nav {
   padding: 30px;
+  color: red;
 }
 
 nav a {
