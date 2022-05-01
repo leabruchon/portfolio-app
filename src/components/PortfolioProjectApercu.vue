@@ -21,8 +21,6 @@
         props: {
             filename: String,
             title: String,
-            //description: String, 
-            //date : String
         }
     }
 

@@ -18,9 +18,9 @@
       </div>
     </div>
     <div class = "links">
-      <img alt="linkedin logo" src="../assets/bxl-linkedin-square.svg">
-      
-      <img alt="git logo" src="../assets/bxl-github.svg">
+      <a href="https://www.linkedin.com/in/lea-bruchon/" target="_blank"><img alt="linkedin logo" src="../assets/bxl-linkedin-square.svg"></a>
+      <a href="https://github.com/leabruchon" target="_blank"> <img alt="git logo" src="../assets/bxl-github.svg"></a>
+     
     </div>
   </div>
     
@@ -40,6 +40,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+    .footer{
+      margin-top: 2em;
+    }
+    
     .footer-line {
         display: flex;
         justify-content: center;
@@ -54,6 +59,8 @@ export default {
       flex-direction: row;
       justify-content: center;
       font-size: 12px;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .information{

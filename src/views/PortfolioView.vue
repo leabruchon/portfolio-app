@@ -4,12 +4,11 @@
             <h1> Projets</h1>
         </div>
         <div class = "project-boxs">
-            <a href= "#/projet"><PortfolioProjectApercu filename = "image1.png" title = "Application mobile CrustBreak"/></a>
-            <a href= "#/projet"><PortfolioProjectApercu filename = "image2.png" title = "Golf Green Team"/></a>
-            <a href= "#/projet"><PortfolioProjectApercu filename = "image2.png" title = "Site Portfolio"/></a>
-            <a href= "#/projet"><PortfolioProjectApercu filename = "image2.png" title = "Projets Java"/></a>   
+            <a href= "#/projet-crust-break"><PortfolioProjectApercu filename = "image1.png" title = "Application mobile CrustBreak"/></a>
+            <a href= "#/projet-green-team"><PortfolioProjectApercu filename = "image2.png" title = "Golf Green Team"/></a>
+            <a href= "#/projet-portfolio"><PortfolioProjectApercu filename = "image2.png" title = "Site Portfolio"/></a>
+            <a href= "#/projets-java"><PortfolioProjectApercu filename = "image2.png" title = "Projets Java"/></a>   
         </div>
-        
     </div>
 </template>
 
@@ -19,7 +18,7 @@ import PortfolioProjectApercu from '@/components/PortfolioProjectApercu.vue'
     export default {
     name: 'PortfolioView',
   components: {
-    PortfolioProjectApercu
+    PortfolioProjectApercu,
   }
 }
 

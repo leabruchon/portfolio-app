@@ -6,13 +6,26 @@
     <router-link to="/"><img alt="Vue logo" src="./assets/logo.svg"></router-link> 
     <router-link to="/">Accueil</router-link> 
     <router-link to="/portfolio">Portfolio</router-link> 
-    <router-link to="/about">À propos</router-link>
+    <router-link to="/services">Services</router-link>
   </nav>
   </div>
   <router-view/>
   
+  <PageFooter tel="07 81 39 87 79" email="lea.bruchon@epfedu.fr" adresse="Chatenay-Malabry, 92 290" />
         
 </template>
+
+<script>
+// @ is an alias to /src
+import PageFooter from '@/components/PageFooter.vue'
+
+export default {
+  name: 'HomeView',
+  components: {
+    PageFooter
+  }
+}
+</script>
 
 <style>
 #app {

@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    
     <div class = "home-content">
       <div class = "home-left-content">
         <div class = "text-content">
@@ -8,35 +7,28 @@
             <h1> Étudiante en Ingénierie et Numérique</h1>
           </div>
           <div class = "text-presentation">
-            <p>En quatrième année à l’EPF Cachan, je recherche un contrat de professionnalisation dans le domaine... </p>
+            <p>En quatrième année à l’EPF Cachan, je recherche un contrat de professionnalisation dans le domaine du développement FullStack, afin de devenir consultante.</p>
           </div>
         </div>
-        
         <div class = "download-button">
           <DownloadButton/>
         </div>
       </div>
-      
       <div id = "home-picture">
         <img alt="Vue logo" src="../assets/home-picture.svg">
       </div>
-    
-  </div>
-  <PageFooter tel="07 81 39 87 79" email="lea.bruchon@epfedu.fr" adresse="Chatenay-Malabry, 92 290" />
-    
-  </div>
+    </div>
+   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import PageFooter from '@/components/PageFooter.vue'
 import DownloadButton from '@/components/DownloadButton.vue'
 
 
 export default {
   name: 'HomeView',
   components: {
-    PageFooter,
     DownloadButton
   }
 }
@@ -46,10 +38,11 @@ export default {
 
 #home-picture {
   width: 80%;
+  padding-right : 10%;
 }
 
 #home-picture img{
-  width:70%;
+  width:100%;
 }
 
 .information-line{
