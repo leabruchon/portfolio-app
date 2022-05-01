@@ -35,6 +35,7 @@ import PortfolioProjectApercu from '@/components/PortfolioProjectApercu.vue'
     .project-boxs a{
         text-decoration: none;
         color: #2c3e50;
+        margin-bottom: 10%;
     }
 
 </style>

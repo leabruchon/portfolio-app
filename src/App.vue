@@ -1,7 +1,7 @@
 <template>
   <div class = "header">
   <nav>
-    <router-link to="/"><img alt="Vue logo" src="./assets/logo.svg"></router-link> 
+    <router-link to="/"><h1 id="LBlogo" style="height: 50px;">LB</h1></router-link> 
     <router-link to="/">Accueil</router-link> 
     <router-link to="/portfolio">Portfolio</router-link> 
     <router-link to="/services">Services</router-link>
@@ -10,8 +10,7 @@
       <input 
       name="darkToggleCheckbox" 
       type="checkbox"
-      v-on:click="addClass"  
-      >
+      v-on:click="addClass">
       <span class="slider round"></span>
     </label>
   </div>
@@ -37,19 +36,27 @@ export default {
   methods: {
     addClass: function() {
         const body = document.body;
-        const app = document.getElementById("app");
+       
+        var elemsA = document.body.getElementsByTagName("*");
+        console.log(elemsA);
         if(this.isAddClass == false){
                 this.isAddClass = true;
-                body.style.background = "#121212DE";
-                app.style.color = "white";
+                body.style.background = "#121212DE";                
+                for (let a of elemsA){
+                  a.style.color = "white";
+                }
         }else{
           this.isAddClass = false;
           body.style.background = "#FFFFFF";
-          app.style.color = "#121212";
+          for (let a of elemsA){
+                  a.style.color = "#121212";
+                }
         }
     }
   }
 }
+
+
 </script>
 
 <style>
@@ -60,17 +67,27 @@ export default {
   text-align: center;
   color: #121212;
 }
+body{
+  margin: 0 5%;
+}
+
+#LBlogo{
+  font-size:2em;
+  font-size: 3em;
+  margin: 0;
+}
 
 nav {
-  padding: 30px;
-  color: red;
+  padding: 2% 0;
+  display: flex;
+  align-items: flex-end;
 }
 
 nav a {
   font-weight: bold;
-  color: black;
+  /*color: black;*/
   text-decoration: none;
-  margin: 10px;
+  margin-right: 20px;
 }
 
 nav a.router-link-exact-active {
@@ -82,8 +99,7 @@ nav a.router-link-exact-active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  margin-left: 5%;
+  justify-content: space-between;
 }
 
 .header img{
@@ -96,4 +112,20 @@ nav a.router-link-exact-active {
 nav a.router-link img{
   margin-right: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  .home-content {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .home-left-content {
+    align-items: center!important;
+    text-align: center!important;
+    margin-bottom: 5%;
+  }
+
+}
+
 </style>

@@ -58,7 +58,7 @@ export default {
 
 #home-picture {
   width: 80%;
-  padding-right : 10%;
+
 }
 
 #home-picture img{
@@ -81,7 +81,6 @@ export default {
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: left;
-  padding-left: 10%;
 }
 
 
