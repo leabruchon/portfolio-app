@@ -6,7 +6,6 @@
     <router-link to="/"><img alt="Vue logo" src="./assets/logo.svg"></router-link> 
     <router-link to="/">Accueil</router-link> 
     <router-link to="/portfolio">Portfolio</router-link> 
-    <router-link to="/services">Services</router-link>
   </nav>
   </div>
   <router-view/>

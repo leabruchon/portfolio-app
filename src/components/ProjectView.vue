@@ -3,18 +3,18 @@
     <div class = "left-content">
       <h1>{{ title }}</h1>
       <div class = "project-images">
-        <div class = "image"><img alt="project image" src="../assets/image1.png"></div>
-        <div class = "image"><img alt="project image" src="../assets/image2.png"></div> 
+        <div class = "image"> <img :src="require(`@/assets/${filename}`)"  alt="image aperçu projet"></div>
+        <div class = "image"> <img :src="require(`@/assets/${filename2}`)"  alt="image aperçu projet"></div> 
       </div>
     </div>
     <div class = "right-content">
       <div class = "descriptif-projet">
         <h3>Description du projet</h3>
-        <p>{{ description }}</p>
+        <p>{{ description }}</p> 
       </div>
       <div class = "technos-projet">
-        <h3>Technologies utilisées</h3>
-        <p>blabla</p>
+        <h3>Outils utilisées</h3>
+        <p>{{technos}}</p>
       </div>
       <div class = "apports-projet">
         <h3>Apports du projet</h3>
@@ -32,7 +32,10 @@
     props: {
       title: String,
       description: String,
-      apports: String
+      technos: String,
+      apports: String,
+      filename: String,
+      filename2: String
     },
 }
 
@@ -65,8 +68,15 @@
   }
 
   .image{
-    margin: 0em 2em 0em 2em;;
+    margin: 0em 2em 0em 2em;
+
   }
+
+  .image img{
+    width: 500px;
+  }
+
+
 
   .project-images img{
     border-radius: 15px;

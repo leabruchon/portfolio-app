@@ -11,8 +11,11 @@
   Ce rôle consiste en la mise en place et le setup du code front-end, l’organisation du développement des différents composants et 
   la réalisation de la navigation de l’application. Le front-end a été relié à une API en backend avec Axios afin de récupérer toutes 
   les données nécessaires notamment pour l’affichage des recettes. "
-  apports="Apprentissage de l’utilisation de Figma en réflexion composants 
+  technos ="Figma, Quasar, GitHub, VSCode"
+  apports="Apprentissage de l’utilisation de Figma en réflexion composants
   Apprendre à utiliser GitHub en équipe, gestion des différentes branches, à faire des merges fetch etc"
+  filename = "CrustBreak1.png"
+  filename2 = "CrustBreak2.png"
   />
   
   

@@ -1,5 +1,8 @@
 <template>
-  <ProjectView title="Green Team Golf" description="blabla"/>
+  <ProjectView title="Green Team Golf"
+  description="blabla"
+  filename = "GreenTeam1.png"
+  filename2 = "GreenTeam2.png"/>
   
 </template>
 

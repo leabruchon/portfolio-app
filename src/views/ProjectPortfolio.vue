@@ -7,9 +7,12 @@
   projets réalisés, et enfin une section à propos plus personnelle. Le site est encore en cours de réalisation mais il sera 
   accessible et adapté pour mobile, et de nouvelles fonctionnalités vont être prochainement ajoutées : un mode sombre, un 
   système de filtre dans le portfolio. "
+  technos= "Vue.js, Figma, GitHub, VSCode"
   apports="Apprendre le développement front-end SPA basé sur un système de composants
   Prendre en main Vue.js, un des trois frameworks les plus populaires actuellement
   Apprendre à build un site réalisé avec un framework sur un serveur"
+  filename = "Portfolio1.png"
+  filename2 = "Portfolio2.png"
   />
   
 </template>
